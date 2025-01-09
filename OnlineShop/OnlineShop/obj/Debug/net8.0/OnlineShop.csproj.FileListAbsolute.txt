@@ -1,0 +1,672 @@
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.AssemblyReference.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfoInputs.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfo.cs
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.CoreCompileInputs.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cs
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.Development.json
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.json
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.staticwebassets.runtime.json
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.exe
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.deps.json
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.runtimeconfig.json
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.pdb
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Core.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Identity.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Humanizer.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.ClientModel.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.CodeDom.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Memory.Data.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Json.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\cProjects\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.development.json
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.OnlineShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineShop.props
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.props
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineShop.props
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.pack.json
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\bundle\OnlineShop.styles.css
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\projectbundle\OnlineShop.bundle.scp.css
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.Up2Date
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.dll
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\refint\OnlineShop.dll
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.pdb
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.genruntimeconfig.cache
+C:\cProjects\OnlineShop\OnlineShop\obj\Debug\net8.0\ref\OnlineShop.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.Development.json
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.json
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.staticwebassets.runtime.json
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.exe
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.deps.json
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.runtimeconfig.json
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.pdb
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Core.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Identity.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Humanizer.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.ClientModel.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.CodeDom.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Memory.Data.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Json.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.AssemblyReference.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfoInputs.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfo.cs
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.CoreCompileInputs.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cs
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.development.json
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.OnlineShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineShop.props
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.props
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineShop.props
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.pack.json
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\bundle\OnlineShop.styles.css
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\projectbundle\OnlineShop.bundle.scp.css
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.Up2Date
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.dll
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\refint\OnlineShop.dll
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.pdb
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.genruntimeconfig.cache
+C:\OnlineShop\OnlineShop\obj\Debug\net8.0\ref\OnlineShop.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.Development.json
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.json
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.staticwebassets.runtime.json
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.exe
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.deps.json
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.runtimeconfig.json
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.pdb
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Core.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Identity.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Humanizer.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.ClientModel.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.CodeDom.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Json.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Final project\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.AssemblyReference.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfoInputs.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfo.cs
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.CoreCompileInputs.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cs
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.development.json
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.OnlineShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineShop.props
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.props
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineShop.props
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\bundle\OnlineShop.styles.css
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\projectbundle\OnlineShop.bundle.scp.css
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.Up2Date
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.dll
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\refint\OnlineShop.dll
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.pdb
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.genruntimeconfig.cache
+C:\Final project\OnlineShop\OnlineShop\obj\Debug\net8.0\ref\OnlineShop.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.Development.json
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\appsettings.json
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.staticwebassets.runtime.json
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.exe
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.deps.json
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.runtimeconfig.json
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\OnlineShop.pdb
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Core.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Azure.Identity.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Humanizer.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.ClientModel.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.CodeDom.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Memory.Data.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Text.Json.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\testing new feature\OnlineShop\OnlineShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.AssemblyReference.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfoInputs.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.AssemblyInfo.cs
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.CoreCompileInputs.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.RazorAssemblyInfo.cs
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.development.json
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.OnlineShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.build.OnlineShop.props
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnlineShop.props
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnlineShop.props
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\staticwebassets.pack.json
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\bundle\OnlineShop.styles.css
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\scopedcss\projectbundle\OnlineShop.bundle.scp.css
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.csproj.Up2Date
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.dll
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\refint\OnlineShop.dll
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.pdb
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.genruntimeconfig.cache
+C:\testing new feature\OnlineShop\OnlineShop\obj\Debug\net8.0\ref\OnlineShop.dll

@@ -1,0 +1,48 @@
+@model IEnumerable<OnlineShop.ViewModels.ProductCategoryViewModel>
+
+@{
+ViewData["Title"] = "Product Categories List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create")">Create New Category</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Products Counts</th>
+        <th>Modified Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.Id</td>
+            <td>@category.Name</td>
+            <td>@category.ProductCount</td>
+            <td>@category.ModifiedDate</td>
+            <td>
+                @if (!category.CanDelete)
+                {
+                    <a class="btn btn-info" href="@Url.Action("Details", new { id = category.Id })">Details</a>
+                    <button class="btn btn-danger" disabled>Delete</button>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = category.Id })">Edit</a>
+                }
+                else
+                {
+                    <a class="btn btn-info" href="@Url.Action("Details", new { id = category.Id })">Details</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = category.Id })">Delete</a>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = category.Id })">Edit</a>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

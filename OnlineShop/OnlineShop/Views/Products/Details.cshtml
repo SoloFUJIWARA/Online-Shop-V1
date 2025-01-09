@@ -1,0 +1,37 @@
+@model OnlineShop.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h2>@Model.Name</h2>
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.ProductId</dd>
+
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
+
+            <dt class="col-sm-3">Product Number</dt>
+            <dd class="col-sm-9">@Model.ProductNumber</dd>
+
+            <dt class="col-sm-3">Standard Cost</dt>
+            <dd class="col-sm-9">@Model.StandardCost.ToString("F2")</dd>
+
+            <dt class="col-sm-3">List Price</dt>
+            <dd class="col-sm-9">$@Model.ListPrice.ToString("F2")</dd>
+
+            <dt class="col-sm-3">Sell Start Date</dt>
+            <dd class="col-sm-9">@Model.SellStartDate</dd>
+        </dl>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-primary" href="@Url.Action("Index", "Products")">Back to List</a>
+    </div>
+</div>

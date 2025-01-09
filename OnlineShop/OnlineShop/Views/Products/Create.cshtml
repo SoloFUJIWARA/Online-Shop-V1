@@ -1,0 +1,47 @@
+@model OnlineShop.Models.Product
+
+@{
+    ViewData["Title"] = "Create New Product";
+    var categories = ViewBag.Categories as List<ProductCategory>;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+    </div>
+    <div class="form-group">
+        <label for="ProductNumber">Product Number</label>
+        <input type="text" class="form-control" id="ProductNumber" name="ProductNumber" value="@Model.ProductNumber" required />
+    </div>
+    <div class="form-group">
+        <label for="Color">Color</label>
+        <input type="text" class="form-control" id="Color" name="Color" value="@Model.Color" required />
+    </div>
+    <div class="form-group">
+        <label for="StandardCost">Standard Cost</label>
+        <input type="number" step="0.01" class="form-control" id="StandardCost" name="StandardCost" inputmode="decimal" value="@Model.StandardCost" required />
+    </div>
+    <div class="form-group">
+        <label for="ListPrice">List Price</label>
+        <input type="number" step="0.01" class="form-control" id="ListPrice" name="ListPrice" inputmode="decimal" value="@Model.ListPrice" required />
+    </div>
+    <div class="form-group">
+        <label for="SellStartDate">Sell Start Date</label>
+        <input type="datetime-local" class="form-control" id="SellStartDate" name="SellStartDate" value="@Model.SellStartDate.ToString("yyyy-MM-ddTHH:mm")" required />
+    </div>
+    <div class="form-group">
+        <label for="ProductCategoryId">Category</label>
+        <select class="form-control" id="ProductCategoryId" name="ProductCategoryId">
+            <option value="">-- Select a Category --</option>
+            @foreach (var category in categories)
+            {
+                <option value="@category.ProductCategoryId">@category.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Cancel</a>
+</form>

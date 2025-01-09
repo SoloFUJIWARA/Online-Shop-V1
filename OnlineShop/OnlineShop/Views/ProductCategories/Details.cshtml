@@ -1,0 +1,69 @@
+@using OnlineShop.ViewModels
+@model OnlineShop.Models.ProductCategory
+
+@{
+    ViewData["Title"] = "Category Details";
+    var products = ViewBag.Products as List<ProductViewModel>;
+}
+
+
+<div>
+    <h3>Category Information</h3>
+    <p><strong>Name:</strong> @Model.Name</p>
+</div>
+
+<div>
+    <h3>Associated Products</h3>
+
+    @if (products != null)
+    {
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Product Number</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Last Modified</th>
+                <th>Number Of Orders</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var product in products)
+            {
+            <tr>
+                <td>@product.ProductId</td>
+                <td>@product.Name</td>
+                <td>@product.ProductNumber</td>
+                <td>@product.Color</td>
+                <td>@product.ListPrice</td>
+                <td>@product.ModifiedDate</td>
+                <td style="text-align: center;">@product.OrderCount</td>
+                <td>
+                    @if (!product.CanDelete)
+                    {
+                    <a class="btn btn-info" href="@Url.Action("Details","Products", new { id = product.ProductId })">Details</a>
+                    <a class="btn btn-warning" href="@Url.Action("Edit","Products", new { id = product.ProductId })">Edit</a>
+                    <button class="btn btn-danger" disabled>Delete</button>
+                    }
+                    else
+                    {
+                    <a class="btn btn-info" href="@Url.Action("Details", "Products", new { id = product.ProductId })">Details</a>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", "Products", new { id = product.ProductId })">Edit</a>
+                    <a class="btn btn-danger" href="@Url.Action("Delete", "Products", new { id = product.ProductId })">Delete</a>
+                    }
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No products associated with this category.</p>
+    }
+</div>
+
+<a class="btn btn-secondary" href="@Url.Action("Index", "ProductCategories")">Back to Categories</a>

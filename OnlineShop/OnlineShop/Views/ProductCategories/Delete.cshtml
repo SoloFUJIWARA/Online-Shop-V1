@@ -1,0 +1,25 @@
+@model OnlineShop.Models.ProductCategory
+
+@{
+    ViewData["Title"] = "Delete Confirmation";
+}
+
+<h1>Delete Product Category</h1>
+<p>Are you sure you want to delete the following product category?</p>
+
+<div class="form-group">
+    <p><strong>Product Category Id:</strong> @Model.ProductCategoryId</p>
+</div>
+<div class="form-group">
+    <p><strong>Name:</strong> @Model.Name</p>
+</div>
+<div class="form-group">
+    <p><strong>Modified Date:</strong> @Model.ModifiedDate</p>
+</div>
+
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ProductCategoryId" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index", "Products")">Cancel</a>
+</form>
