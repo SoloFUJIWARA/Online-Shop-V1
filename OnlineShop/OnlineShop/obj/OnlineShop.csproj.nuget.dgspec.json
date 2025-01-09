@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\testing new feature\\OnlineShop\\OnlineShop\\OnlineShop.csproj": {}
+    "C:\\Users\\nnica\\OneDrive\\Desktop\\Project_musha\\OnlineShop\\OnlineShop\\OnlineShop.csproj": {}
   },
   "projects": {
-    "C:\\testing new feature\\OnlineShop\\OnlineShop\\OnlineShop.csproj": {
+    "C:\\Users\\nnica\\OneDrive\\Desktop\\Project_musha\\OnlineShop\\OnlineShop\\OnlineShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\testing new feature\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
+        "projectUniqueName": "C:\\Users\\nnica\\OneDrive\\Desktop\\Project_musha\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
         "projectName": "OnlineShop",
-        "projectPath": "C:\\testing new feature\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\testing new feature\\OnlineShop\\OnlineShop\\obj\\",
+        "projectPath": "C:\\Users\\nnica\\OneDrive\\Desktop\\Project_musha\\OnlineShop\\OnlineShop\\OnlineShop.csproj",
+        "packagesPath": "C:\\Users\\nnica\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nnica\\OneDrive\\Desktop\\Project_musha\\OnlineShop\\OnlineShop\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "H:\\Visual stuidio sdk\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\nnica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -83,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -17,79 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineShop
 build_property.RootNamespace = OnlineShop
-build_property.ProjectDir = C:\testing new feature\OnlineShop\OnlineShop\
+build_property.ProjectDir = C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\testing new feature\OnlineShop\OnlineShop
+build_property.MSBuildProjectDirectory = C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Home/Index.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Home/Privacy.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/ProductCategories/Create.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/ProductCategories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/ProductCategories/Delete.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/ProductCategories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3JpZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/ProductCategories/Details.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/ProductCategories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3JpZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/ProductCategories/Edit.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/ProductCategories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3JpZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/ProductCategories/Index.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/ProductCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3JpZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Products/Create.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Products/Delete.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Products/Details.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Products/Edit.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Products/Index.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Shared/Error.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/_ViewImports.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/_ViewStart.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/testing new feature/OnlineShop/OnlineShop/Views/Shared/_Layout.cshtml]
+[C:/Users/nnica/OneDrive/Desktop/Project_musha/OnlineShop/OnlineShop/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-62ip2yfgpx
