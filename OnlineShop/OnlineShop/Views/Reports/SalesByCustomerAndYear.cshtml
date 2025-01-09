@@ -1,0 +1,27 @@
+@model IEnumerable<dynamic>
+
+@{
+    ViewBag.Title = "Sales By Customer and Year";
+}
+
+<h2>Sales by Customer and Year</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Customer ID</th>
+        <th>Year</th>
+        <th>Total Sales</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerID</td>
+            <td>@item.Year</td>
+            <td>@item.TotalSales.ToString("C")</td> <!-- Format as currency -->
+        </tr>
+    }
+    </tbody>
+</table>

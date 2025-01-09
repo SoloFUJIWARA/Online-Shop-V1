@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OnlineShop.Data;
 
 namespace OnlineShop.Controllers;
@@ -63,34 +64,67 @@ public class ReportsController : Controller
 
         return View(report);
     }
-/* //
+
     // Report 4: Sales by Customers and Year
     public ActionResult SalesByCustomerAndYear()
     {
-        var report = db.Orders
-                       .GroupBy(o => new { o.CustomerId, o.OrderDate.Year })
-                       .Select(g => new
-                       {
-                           CustomerId = g.Key.CustomerId,
-                           Year = g.Key.Year,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
-        return View(report);
-    }
+        var report = db.SalesOrderDetails
+            .Include(a => a.Product) // Include related Product data
+            .Join(
+                db.SalesOrderHeaders, // Join with the SalesOrderHeaders table
+                salesDetail => salesDetail.SalesOrderId, // Match on SalesOrderID
+                salesHeader => salesHeader.SalesOrderId, // Match on SalesOrderID in SalesOrderHeaders
+                (salesDetail, salesHeader) => new
+                {
+                    salesDetail,
+                    salesHeader.CustomerId // Include CustomerID
+                }
+            )
+            .Join(
+                db.Customers, // Join with the Customers table
+                salesWithHeader => salesWithHeader.CustomerId, // Match on CustomerID
+                customer => customer.CustomerId, // Match on CustomerId in Customers
+                (salesWithHeader, customer) => new
+                {
+                    salesWithHeader.salesDetail,
+                    CustomerName = customer.CompanyName, // Include CustomerName
+                    CustomerID = customer.CustomerId,
+                    salesWithHeader.salesDetail.ModifiedDate
+                }
+            )
+            .GroupBy(s => new { s.CustomerID, Year = s.ModifiedDate.Year }) // Group by CustomerId and Year
+            .Select(g => new
+            {
+                CustomerID = g.Key.CustomerID,
+                CustomerName = g.First().CustomerName, // Fetch customer name
+                Year = g.Key.Year,
+                TotalSales = g.Sum(x => x.salesDetail.UnitPrice * x.salesDetail.OrderQty) // Calculate total sales
+            })
+            .ToList();
 
+        return View(report);
+
+    }
+    
     // Report 5: Sales by City
     public ActionResult SalesByCity()
     {
-        var report = db.Orders
-                       .GroupBy(o => o.City)
-                       .Select(g => new
-                       {
-                           City = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
+        var report = db.SalesOrderDetails
+            .Join(db.Addresses, 
+                sod => sod.ProductId, // Foreign key in SalesOrderDetails
+                addr => addr.AddressId, // Primary key in Addresses
+                (sod, addr) => new { sod, addr }) // Join result
+            .GroupBy(x => x.addr.City) // Group by City
+            .Select(g => new
+            {
+                City = g.Key, // Group key (City)
+                TotalSales = g.Sum(x => x.sod.LineTotal) // Sum of LineTotal for each city
+            })
+            .ToList();
+
         return View(report);
     }
-
+/* //
     // Report 6: Top 10 Customers by Sales Amount
     public ActionResult TopCustomersBySales()
     {
