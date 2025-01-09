@@ -1,0 +1,18 @@
+@{
+    ViewBag.Title = "Reports";
+}
+
+<h2>Select a Report</h2>
+
+<form method="get" action="@Url.Action("SalesByYearAndMonth", "Reports")">
+    <select name="reportType">
+        <option value="SalesByYearAndMonth">Sales By Year and Month</option>
+        <option value="SalesByProduct">Sales By Product</option>
+        <option value="SalesByCategory">Sales By Category</option>
+        <option value="SalesByCustomerAndYear">Sales By Customer and Year</option>
+        <option value="SalesByCity">Sales By City</option>
+        <option value="TopCustomersBySales">Top 10 Customers by Sales</option>
+        <!-- Add more report options -->
+    </select>
+    <button type="submit">Generate Report</button>
+</form>
