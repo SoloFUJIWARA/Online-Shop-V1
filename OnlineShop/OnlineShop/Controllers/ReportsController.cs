@@ -13,33 +13,39 @@ public class ReportsController : Controller
         return View();
     }
 
-    /*// Report 1: Sales by Year and Month
+    // Report 1: Sales by Year and Month
     public ActionResult SalesByYearAndMonth()
     {
-        var report = db.Orders
-                       .GroupBy(o => new { o.OrderDate.Year, o.OrderDate.Month })
-                       .Select(g => new
-                       {
-                           Year = g.Key.Year,
-                           Month = g.Key.Month,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
+        var report = db.SalesOrderDetails
+            .GroupBy(o => new { Year = o.ModifiedDate.Year, Month = o.ModifiedDate.Month })
+            .Select(g => new
+            {
+                Year = g.Key.Year,
+                Month = g.Key.Month,
+                TotalSales = g.Sum(o => o.OrderQty)
+            })
+            .ToList();
+
         return View(report);
     }
-
-    // Report 2: Sales by Product
+    
+    
     public ActionResult SalesByProduct()
     {
-        var report = db.Orders
-                       .GroupBy(o => o.ProductId)
-                       .Select(g => new
-                       {
-                           Product = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
+        var report = db.SalesOrderDetails
+            .Join(db.Products, sod => sod.ProductId, p => p.ProductId, (sod, p) => new { sod, p })
+            .GroupBy(x => new { x.p.ProductId, x.p.Name }) // Include ProductID in the group by
+            .Select(g => new
+            {
+                ProductID = g.Key.ProductId,   // Accessing ProductID
+                ProductName = g.Key.Name, // Accessing ProductName
+                TotalSales = g.Sum(x => x.sod.LineTotal) // Sum of LineTotal
+            })
+            .ToList();
+
         return View(report);
     }
-
+/*//
     // Report 3: Sales by Product Categories
     public ActionResult SalesByCategory()
     {
@@ -155,5 +161,5 @@ public class ReportsController : Controller
                            TotalSales = g.Sum(o => o.Amount)
                        }).ToList();
         return View(report);
-    }*/
+    }#1#*/
 }

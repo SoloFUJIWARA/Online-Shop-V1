@@ -1,0 +1,25 @@
+@model IEnumerable<dynamic>
+
+@{
+    ViewBag.Title = "Sales By Product";
+}
+
+<h2>Sales by Product</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Product ID</th>
+        <th>Total Sales</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.TotalSales</td>
+        </tr>
+    }
+    </tbody>
+</table>

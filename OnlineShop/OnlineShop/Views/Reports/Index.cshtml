@@ -2,17 +2,52 @@
     ViewBag.Title = "Reports";
 }
 
+@{
+    ViewBag.Title = "Select a Report";
+}
+
 <h2>Select a Report</h2>
 
-<form method="get" action="@Url.Action("SalesByYearAndMonth", "Reports")">
-    <select name="reportType">
+<form method="get" id="reportForm">
+    <select name="reportType" id="reportType">
         <option value="SalesByYearAndMonth">Sales By Year and Month</option>
         <option value="SalesByProduct">Sales By Product</option>
         <option value="SalesByCategory">Sales By Category</option>
         <option value="SalesByCustomerAndYear">Sales By Customer and Year</option>
         <option value="SalesByCity">Sales By City</option>
         <option value="TopCustomersBySales">Top 10 Customers by Sales</option>
-        <!-- Add more report options -->
     </select>
     <button type="submit">Generate Report</button>
 </form>
+
+<script>
+    // Attach an event listener to the form's submit event
+    document.getElementById('reportForm').addEventListener('submit', function (event) {
+        event.preventDefault();  // Prevent the default form submission
+
+        var selectedReport = document.getElementById('reportType').value;
+
+        // Dynamically change the action of the form based on the selected report type
+        var formAction = '@Url.Action("Index", "Reports")';  // Default action
+
+        if (selectedReport === 'SalesByYearAndMonth') {
+            formAction = '@Url.Action("SalesByYearAndMonth", "Reports")';
+        } else if (selectedReport === 'SalesByProduct') {
+            formAction = '@Url.Action("SalesByProduct", "Reports")';
+        } else if (selectedReport === 'SalesByCategory') {
+            formAction = '@Url.Action("SalesByCategory", "Reports")';
+        } else if (selectedReport === 'SalesByCustomerAndYear') {
+            formAction = '@Url.Action("SalesByCustomerAndYear", "Reports")';
+        } else if (selectedReport === 'SalesByCity') {
+            formAction = '@Url.Action("SalesByCity", "Reports")';
+        } else if (selectedReport === 'TopCustomersBySales') {
+            formAction = '@Url.Action("TopCustomersBySales", "Reports")';
+        }
+
+        // Set the form action to the dynamically determined URL
+        this.action = formAction;
+
+        // Submit the form
+        this.submit();
+    });
+</script>
