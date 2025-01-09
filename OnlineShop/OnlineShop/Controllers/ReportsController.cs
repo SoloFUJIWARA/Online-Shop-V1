@@ -45,20 +45,25 @@ public class ReportsController : Controller
 
         return View(report);
     }
-/*//
+
     // Report 3: Sales by Product Categories
     public ActionResult SalesByCategory()
     {
-        var report = db.Orders
-                       .GroupBy(o => o.Category.Name)
-                       .Select(g => new
-                       {
-                           Category = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
+        var report = db.SalesOrderDetails
+            .Join(db.Products, sod => sod.ProductId, p => p.ProductId, (sod, p) => new { sod, p })
+            .Join(db.ProductCategories, pp => pp.p.ProductCategoryId, pc => pc.ProductCategoryId, (pp, pc) => new { pp.sod, pp.p, pc })
+            .GroupBy(x => new { x.pc.ProductCategoryId, x.pc.Name })  // Group by CategoryID and CategoryName
+            .Select(g => new
+            {
+                CategoryID = g.Key.ProductCategoryId,
+                CategoryName = g.Key.Name, // Accessing CategoryName
+                TotalSales = g.Sum(x => x.sod.LineTotal) // Summing sales
+            })
+            .ToList();
+
         return View(report);
     }
-
+/* //
     // Report 4: Sales by Customers and Year
     public ActionResult SalesByCustomerAndYear()
     {
