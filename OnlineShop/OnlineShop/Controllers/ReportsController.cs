@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnlineShop.Data;
+using OnlineShop.Models;
 
 namespace OnlineShop.Controllers;
 
@@ -124,22 +125,27 @@ public class ReportsController : Controller
 
         return View(report);
     }
-/* //
-    // Report 6: Top 10 Customers by Sales Amount
-    public ActionResult TopCustomersBySales()
-    {
-        var report = db.Orders
-                       .GroupBy(o => o.CustomerId)
-                       .OrderByDescending(g => g.Sum(o => o.Amount))
-                       .Take(10)
-                       .Select(g => new
-                       {
-                           Customer = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
-        return View(report);
-    }
 
+    // Report 6: Top 10 Customers by Sales Amount
+    public IActionResult Top10CustomersBySales()
+    {
+        var topCustomers = db.Customers
+            .Select(customer => new
+            {
+                CustomerName = customer.FirstName + " " + customer.LastName, // Combine first and last name
+                TotalSales = customer.SalesOrderHeaders
+                    .SelectMany(order => order.SalesOrderDetails)
+                    .Sum(detail => detail.LineTotal)
+                    .ToString() + " $"
+            })
+            .OrderByDescending(c => c.TotalSales)
+            .Take(10)
+            .ToList();
+
+
+        return View(topCustomers);
+    }
+/* //
     // Report 7: Top 10 Customers by Sales Amount for each year
     public ActionResult TopCustomersBySalesForYear(int year)
     {
