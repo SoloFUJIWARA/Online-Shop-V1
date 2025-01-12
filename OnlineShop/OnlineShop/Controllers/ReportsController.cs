@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using OnlineShop.Data;
 using OnlineShop.Models;
 
@@ -145,23 +146,35 @@ public class ReportsController : Controller
 
         return View(topCustomers);
     }
-/* //
+
     // Report 7: Top 10 Customers by Sales Amount for each year
-    public ActionResult TopCustomersBySalesForYear(int year)
+    public ActionResult Top10CustomersBySalesForYear(int year = 2008)
     {
-        var report = db.Orders
-                       .Where(o => o.OrderDate.Year == year)
-                       .GroupBy(o => o.CustomerId)
-                       .OrderByDescending(g => g.Sum(o => o.Amount))
-                       .Take(10)
-                       .Select(g => new
-                       {
-                           Customer = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
-        return View(report);
+        var topCustomers = db.Customers
+            .Select(customer => new
+            {
+                CustomerName = customer.FirstName + " " + customer.LastName, // Combine first and last name
+                TotalSales = customer.SalesOrderHeaders
+                    .Where(order => order.OrderDate.Year == year)  // Filter by the specified year (default is 2008)
+                    .SelectMany(order => order.SalesOrderDetails)  // Flatten SalesOrderDetails for each order
+                    .Sum(detail => detail.LineTotal)  // Sum the total sales for each customer
+            })
+            .Where(c => c.TotalSales > 0) // Ensure only customers with sales are included
+            .OrderByDescending(c => c.TotalSales) // Order by total sales in descending order
+            .Take(10) // Take the top 10 customers
+            .ToList();
+
+        var formattedTopCustomers = topCustomers.Select(c => new
+        {
+            CustomerName = c.CustomerName,
+            TotalSales = c.TotalSales.ToString("C") // Format as currency
+        }).ToList();
+
+        return View(formattedTopCustomers); // Pass the data to the View
     }
 
+
+/* //
     // Report 8: Top 10 Products by Sales Amount
     public ActionResult TopProductsBySales()
     {

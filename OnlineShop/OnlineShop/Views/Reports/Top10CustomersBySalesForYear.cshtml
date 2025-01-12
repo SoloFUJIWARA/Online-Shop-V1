@@ -1,8 +1,8 @@
 @model IEnumerable<dynamic>
 @{
-    ViewBag.Title = "Top 10 Customers by Sales";
+    ViewBag.Title = "Top 10 Customers Sales by Yea";
 }
-<h2>Top 10 Customers by Sales</h2>
+<h2>Top 10 Customers Sales by Year</h2>
 
 <table class="table table-striped">
     <thead>
@@ -16,7 +16,7 @@
     {
         <tr>
             <td>@item.CustomerName</td>
-            <td>@item.TotalSales</td>
+            <td>@item.TotalSales</td> <!-- This will display the formatted sales -->
         </tr>
     }
     </tbody>
