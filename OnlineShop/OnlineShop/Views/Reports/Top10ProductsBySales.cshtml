@@ -1,0 +1,21 @@
+@model IEnumerable<dynamic>
+
+<h2>Top 10 Products by Sales Amount</h2>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Product Name</th>
+        <th>Total Sales</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.TotalSales</td> 
+        </tr>
+    }
+    </tbody>
+</table>

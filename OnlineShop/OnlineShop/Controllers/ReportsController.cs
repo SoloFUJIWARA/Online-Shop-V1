@@ -174,22 +174,33 @@ public class ReportsController : Controller
     }
 
 
-/* //
+
     // Report 8: Top 10 Products by Sales Amount
-    public ActionResult TopProductsBySales()
+    public ActionResult Top10ProductsBySales()
     {
-        var report = db.Orders
-                       .GroupBy(o => o.ProductId)
-                       .OrderByDescending(g => g.Sum(o => o.Amount))
-                       .Take(10)
-                       .Select(g => new
-                       {
-                           Product = g.Key,
-                           TotalSales = g.Sum(o => o.Amount)
-                       }).ToList();
-        return View(report);
+        var topProducts = db.SalesOrderDetails
+            .Join(db.Products, sod => sod.ProductId, p => p.ProductId, (sod, p) => new { sod, p })
+            .GroupBy(x => new { x.sod.ProductId, x.p.Name }) 
+            .Select(g => new
+            {
+                ProductName = g.Key.Name,
+                TotalSales = g.Sum(x => x.sod.LineTotal) // Total sales per product
+            })
+            .OrderByDescending(g => g.TotalSales)  // Order by total sales in descending order
+            .Take(10) // Get top 10 products
+            .ToList();
+
+        var formattedTopProducts = topProducts.Select(p => new
+        {
+            ProductName = p.ProductName,
+            TotalSales = p.TotalSales.ToString("C") // Format as currency
+        }).ToList();
+
+        return View(formattedTopProducts); // Pass the data to the View
     }
 
+
+/* //
     // Report 9: Top 10 Products by Sales Profit
     public ActionResult TopProductsByProfit()
     {
