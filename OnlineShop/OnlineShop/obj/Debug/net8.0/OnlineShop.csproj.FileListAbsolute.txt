@@ -842,3 +842,4 @@ C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\obj\Debug\ne
 C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.pdb
 C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\obj\Debug\net8.0\OnlineShop.genruntimeconfig.cache
 C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\obj\Debug\net8.0\ref\OnlineShop.dll
+C:\Users\nnica\OneDrive\Desktop\Project_musha\OnlineShop\OnlineShop\bin\Debug\net8.0\Newtonsoft.Json.dll

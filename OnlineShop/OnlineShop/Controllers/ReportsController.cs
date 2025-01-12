@@ -10,7 +10,6 @@ public class ReportsController : Controller
 {
     private ApplicationDbContext db = new ApplicationDbContext();
 
-    // GET: Reports/Index
     public ActionResult Index()
     {
         return View();

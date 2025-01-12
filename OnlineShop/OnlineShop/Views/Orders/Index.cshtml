@@ -1,42 +1,43 @@
+
 @model IEnumerable<SalesOrderViewModel>
 
-@{
+    @{
     ViewBag.Title = "Orders";
 }
 
 <h2>Orders</h2>
 
-@if (Model != null && Model.Any()) 
+    @if (Model != null && Model.Any()) 
 {
     <table class="table">
         <thead>
         <tr>
-            <th>Sales Order ID</th>
-            <th>Order Date</th>
-            <th>Sales Order Number</th>
-            <th>Status</th>
-            <th>Product ID</th>
-            <th>Order Quantity</th>
-            <th>Line Total</th>
-            <th>Total Due</th>
+        <th>Sales Order ID</th>
+        <th>Order Date</th>
+        <th>Sales Order Number</th>
+        <th>Status</th>
+        <th>Product ID</th>
+        <th>Order Quantity</th>
+        <th>Line Total</th>
+        <th>Total Due</th>
         </tr>
         </thead>
         <tbody>
         @foreach (var order in Model)
-        {
-            <tr>
-                <td>@order.SalesOrderId</td>
-                <td>@order.OrderDate.ToString("d")</td>  <!-- Format the date -->
-                <td>@order.SalesOrderNumber</td>
-                <td>@order.Status</td>
-                <td>@order.ProductId</td>
-                <td>@order.OrderQty</td>
-                <td>@order.LineTotal.ToString("C")</td>  <!-- Format as currency -->
-                <td>@order.TotalDue.ToString("C")</td>  <!-- Format as currency -->
+    {
+        <tr>
+            <td>@order.SalesOrderId</td>
+            <td>@order.OrderDate.ToString("d")</td>  <!-- Format the date -->
+            <td>@order.SalesOrderNumber</td>
+            <td>@order.Status</td>
+            <td>@order.ProductId</td>
+            <td>@order.OrderQty</td>
+            <td>@order.LineTotal.ToString("C")</td>  <!-- Format as currency -->
+            <td>@order.TotalDue.ToString("C")</td>  <!-- Format as currency -->
             </tr>
-        }
-        </tbody>
-    </table>
+    }
+    </tbody>
+        </table>
 }
 else
 {
