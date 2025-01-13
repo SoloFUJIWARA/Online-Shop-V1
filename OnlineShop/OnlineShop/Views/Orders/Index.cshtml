@@ -1,45 +1,36 @@
-
-@model IEnumerable<SalesOrderViewModel>
-
-    @{
-    ViewBag.Title = "Orders";
-}
+@model IEnumerable<OnlineShop.Models.SalesOrderViewModel>
 
 <h2>Orders</h2>
 
-    @if (Model != null && Model.Any()) 
+@if (Model != null && Model.Any())
 {
     <table class="table">
         <thead>
         <tr>
-        <th>Sales Order ID</th>
-        <th>Order Date</th>
-        <th>Sales Order Number</th>
-        <th>Status</th>
-        <th>Product ID</th>
-        <th>Order Quantity</th>
-        <th>Line Total</th>
-        <th>Total Due</th>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Line Total</th> <!-- Optional, if you want to show the total for this product -->
+            <th>Total Due</th> <!-- Optional, if you want to show the overall total -->
         </tr>
         </thead>
         <tbody>
         @foreach (var order in Model)
-    {
-        <tr>
-            <td>@order.SalesOrderId</td>
-            <td>@order.OrderDate.ToString("d")</td>  <!-- Format the date -->
-            <td>@order.SalesOrderNumber</td>
-            <td>@order.Status</td>
-            <td>@order.ProductId</td>
-            <td>@order.OrderQty</td>
-            <td>@order.LineTotal.ToString("C")</td>  <!-- Format as currency -->
-            <td>@order.TotalDue.ToString("C")</td>  <!-- Format as currency -->
+        {
+            <tr>
+                <td>@order.ProductId</td>
+                <td>@order.ProductName</td>
+                <td>@order.Price.ToString("C")</td> <!-- Format as currency -->
+                <td>@order.Quantity</td>
+                <td>@order.LineTotal.ToString("C")</td> <!-- Optional, format as currency -->
+                <td>@order.TotalDue.ToString("C")</td> <!-- Optional, format as currency -->
             </tr>
-    }
-    </tbody>
-        </table>
+        }
+        </tbody>
+    </table>
 }
 else
 {
-    <p>No orders available.</p>  <!-- Display a message if no orders are available -->
+    <p>No orders available.</p>
 }

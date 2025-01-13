@@ -7,10 +7,7 @@ namespace OnlineShop.Controllers
 {
     public class OrdersController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
+     
         // Inject the DbContext into the controller
         private readonly ApplicationDbContext _context;
 
@@ -20,39 +17,27 @@ namespace OnlineShop.Controllers
         }
 
         // Action to display the orders
-        public IActionResult Orders()
+        public ActionResult Orders()
         {
-            // Retrieve the orders data by joining SalesOrderDetails and SalesOrderHeaders
-            var orders = _context.SalesOrderDetails
-                .Join(
-                    _context.SalesOrderHeaders,  // Join SalesOrderDetails with SalesOrderHeaders
-                    sod => sod.SalesOrderId,     // Match SalesOrderId in both tables
-                    soh => soh.SalesOrderId,    // Match SalesOrderId in both tables
-                    (sod, soh) => new SalesOrderViewModel
-                    {
-                        SalesOrderId = soh.SalesOrderId,    // Order ID from SalesOrderHeader
-                        OrderDate = soh.OrderDate,          // Order Date from SalesOrderHeader
-                        SalesOrderNumber = soh.SalesOrderNumber,  // Sales Order Number
-                        Status = soh.Status,                // Order Status
-                        ProductId = sod.ProductId,          // Product ID from SalesOrderDetail
-                        OrderQty = sod.OrderQty,            // Quantity ordered
-                        LineTotal = sod.LineTotal,          // Line total for the product
-                        TotalDue = soh.TotalDue             // Total amount due for the order
-                    })
-                .OrderByDescending(o => o.OrderDate)  // Sort by OrderDate descending
-                .ToList();  // Execute the query and get the result
+            // Query the database to get all orders from the InCart table
+            var orders = _context.InCarts
+                .Select(x => new SalesOrderViewModel
+                {
+                    ProductId = x.ProductId,
+                    ProductName = x.ProductName,
+                    Price = x.Price,
+                    Quantity = x.Quantity,
+                    UserId = x.UserId, // If you still want to show the UserId for each product
+                    LineTotal = x.Quantity * x.Price,  // Calculate line total for the product
+                    TotalDue = x.Quantity * x.Price   // Calculate total due for this product
+                })
+                .ToList();
 
-            // Check if orders are null or empty before passing to the view
-            if (orders == null || !orders.Any())
-            {
-                // Handle scenario where there are no orders
-                ViewBag.Message = "No orders available.";
-                return View(new List<SalesOrderViewModel>());  // Return an empty list if no data
-            }
-
-            // Return the view with the orders data
-            return View(orders);
+            // Return the orders to the view
+            return View("Index", orders);  // Pass orders to the view
         }
+
+
 
 
     }
