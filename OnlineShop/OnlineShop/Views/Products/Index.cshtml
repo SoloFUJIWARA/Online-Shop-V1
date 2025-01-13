@@ -1,7 +1,7 @@
 @model IEnumerable<OnlineShop.ViewModels.ProductViewModel>
 
 @{
-ViewData["Title"] = "Product Categories List";
+    ViewData["Title"] = "Product Categories List";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -26,29 +26,34 @@ ViewData["Title"] = "Product Categories List";
     <tbody>
     @foreach (var product in Model)
     {
-    <tr>
-        <td>@product.ProductId</td>
-        <td>@product.Name</td>
-        <td>@product.ProductNumber</td>
-        <td>@product.Color</td>
-        <td>@product.ListPrice</td>
-        <td>@product.ModifiedDate</td>
-        <td style="text-align: center;">@product.OrderCount</td>
-        <td>
-            @if (!product.CanDelete)
-            {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.Name</td>
+            <td>@product.ProductNumber</td>
+            <td>@product.Color</td>
+            <td>@product.ListPrice</td>
+            <td>@product.ModifiedDate</td>
+            <td style="text-align: center;">@product.OrderCount</td>
+            <td>
                 <a class="btn btn-info" href="@Url.Action("Details", new { id = product.ProductId })">Details</a>
                 <a class="btn btn-warning" href="@Url.Action("Edit", new { id = product.ProductId })">Edit</a>
-                <button class="btn btn-danger" disabled>Delete</button>
-            }
-            else
-            {
-                <a class="btn btn-info" href="@Url.Action("Details", new { id = product.ProductId })">Details</a>
-                <a class="btn btn-warning" href="@Url.Action("Edit", new { id = product.ProductId })">Edit</a>
-                <a class="btn btn-danger" href="@Url.Action("Delete", new { id = product.ProductId })">Delete</a>
-            }
-        </td>
-    </tr>
+
+                @if (!product.CanDelete)
+                {
+                    <button class="btn btn-danger" disabled>Delete</button>
+                }
+                else
+                {
+                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = product.ProductId })">Delete</a>
+                }
+
+                <!-- Inline Add to Cart Form -->
+                <form asp-controller="Products" asp-action="AddToCart" method="post" style="display: inline;">
+                    <input type="hidden" name="productId" value="@product.ProductId" />
+                    <button type="submit" class="btn btn-success">Add to Cart</button>
+                </form>
+            </td>
+        </tr>
     }
     </tbody>
 </table>

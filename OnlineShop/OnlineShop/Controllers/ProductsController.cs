@@ -18,7 +18,7 @@ namespace OnlineShop.Controllers
         public IActionResult Index()
         {
             var products = _context.Products
-                .Include(p => p.ProductCategory) // Include related category data
+                .Include(p => p.ProductCategory)
                 .Select(p => new ProductViewModel
                 {
                     ProductId = p.ProductId,
@@ -29,13 +29,12 @@ namespace OnlineShop.Controllers
                     ModifiedDate = p.ModifiedDate,
                     OrderCount = _context.SalesOrderDetails
                         .Where(o => o.ProductId == p.ProductId)
-                        .Count() // Efficiently count orders for each product
+                        .Count()
                 })
                 .ToList();
 
             return View(products);
         }
-
         public IActionResult Details(int id)
         {
             var product = _context.Products
@@ -145,6 +144,42 @@ namespace OnlineShop.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-        
+        [HttpPost]
+        public IActionResult AddToCart(int productId, int quantity = 1)
+        {
+            // Get the product from the database
+            var product = _context.Products.FirstOrDefault(p => p.ProductId == productId);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            // Retrieve or create the cart
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            // Check if the product is already in the cart
+            var cartItem = cart.FirstOrDefault(ci => ci.ProductId == productId);
+            if (cartItem != null)
+            {
+                // Update the quantity
+                cartItem.Quantity += quantity;
+            }
+            else
+            {
+                // Add a new item to the cart
+                cart.Add(new CartItem
+                {
+                    ProductId = product.ProductId,
+                    ProductName = product.Name,
+                    Price = product.ListPrice,
+                    Quantity = quantity
+                });
+            }
+
+            // Save the cart back to the session
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return RedirectToAction("Cart", "Cart");
+        }
     }
 }
