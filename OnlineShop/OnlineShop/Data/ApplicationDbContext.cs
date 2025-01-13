@@ -29,6 +29,8 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<ProductModel> ProductModels { get; set; }
 
     public virtual DbSet<SalesOrderDetail> SalesOrderDetails { get; set; }
+    
+    public DbSet<InCart> InCarts { get; set; } // Add the InCart DbSet
 
     public virtual DbSet<SalesOrderHeader> SalesOrderHeaders { get; set; }
 

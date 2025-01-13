@@ -16,16 +16,16 @@ namespace OnlineShop.Controllers
         }
 
         // Helper Method to Get Cart from Session
-        private List<CartItem> GetCartFromSession()
+        private List<InCart> GetCartFromSession()
         {
             var cartJson = HttpContext.Session.GetString("Cart");
             return string.IsNullOrEmpty(cartJson)
-                ? new List<CartItem>()
-                : JsonConvert.DeserializeObject<List<CartItem>>(cartJson);
+                ? new List<InCart>()
+                : JsonConvert.DeserializeObject<List<InCart>>(cartJson);
         }
 
         // Helper Method to Save Cart to Session
-        private void SaveCartToSession(List<CartItem> cart)
+        private void SaveCartToSession(List<InCart> cart)
         {
             HttpContext.Session.SetString("Cart", JsonConvert.SerializeObject(cart));
         }
@@ -37,6 +37,37 @@ namespace OnlineShop.Controllers
             return View("/Views/Cart Views/Cart.cshtml", cart);  // Specify the correct path and pass the model (cart)
         }
 
+        public IActionResult ConfirmCart()
+        {
+            // Get the current cart from the session
+            var cart = GetCartFromSession();
+
+            // Loop through each item in the cart and add it to the InCarts table
+            foreach (var item in cart)
+            {
+                // Create a new InCart object based on the CartItem data
+                var inCart = new InCart
+                {
+                    ProductId = item.ProductId,
+                    ProductName = item.ProductName,
+                    Price = item.Price,
+                    Quantity = item.Quantity,
+                    UserId = "SomeUserId" // Replace this with actual UserId if needed
+                };
+
+                // Add the new InCart object to the database
+                _context.InCarts.Add(inCart);
+            }
+
+            // Save the changes to the database
+            _context.SaveChanges();
+
+            // Optionally, clear the cart after confirming the order
+            SaveCartToSession(new List<InCart>());
+
+            // Redirect the user to a confirmation page or order summary
+            return RedirectToAction("Cart");
+        }
 
         // Add to Cart Action
         public IActionResult AddToCart(int productId)
@@ -64,7 +95,7 @@ namespace OnlineShop.Controllers
             else
             {
                 // If the item doesn't exist, add it to the cart
-                cart.Add(new CartItem
+                cart.Add(new InCart
                 {
                     ProductId = product.ProductId,
                     ProductName = product.Name,

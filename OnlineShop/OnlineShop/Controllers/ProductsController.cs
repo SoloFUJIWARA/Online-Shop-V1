@@ -155,7 +155,7 @@ namespace OnlineShop.Controllers
             }
 
             // Retrieve or create the cart
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+            var cart = HttpContext.Session.GetObjectFromJson<List<InCart>>("Cart") ?? new List<InCart>();
 
             // Check if the product is already in the cart
             var cartItem = cart.FirstOrDefault(ci => ci.ProductId == productId);
@@ -167,7 +167,7 @@ namespace OnlineShop.Controllers
             else
             {
                 // Add a new item to the cart
-                cart.Add(new CartItem
+                cart.Add(new InCart
                 {
                     ProductId = product.ProductId,
                     ProductName = product.Name,

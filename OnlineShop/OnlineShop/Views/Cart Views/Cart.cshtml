@@ -1,4 +1,4 @@
-@model List<OnlineShop.Models.CartItem>
+@model List<OnlineShop.Models.InCart>
 
 @{
     ViewData["Title"] = "Your Cart";
@@ -33,10 +33,17 @@
         }
         </tbody>
     </table>
+
     <a href="@Url.Action("Index", "Products")" class="btn btn-primary">Continue Shopping</a>
+
     <p>
         <strong>Total: </strong> @Model.Sum(x => x.Price * x.Quantity).ToString("C")
     </p>
+
+    <!-- Add a button to confirm the cart -->
+    <form method="post" action="@Url.Action("ConfirmCart", "Cart")">
+        <button type="submit" class="btn btn-success">Confirm Cart</button>
+    </form>
 }
 else
 {
