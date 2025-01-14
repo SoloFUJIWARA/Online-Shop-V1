@@ -35,23 +35,25 @@
             <td>@product.ModifiedDate</td>
             <td style="text-align: center;">@product.OrderCount</td>
             <td>
-                <a class="btn btn-info" href="@Url.Action("Details", new { id = product.ProductId })">Details</a>
-                <a class="btn btn-warning" href="@Url.Action("Edit", new { id = product.ProductId })">Edit</a>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-info" href="@Url.Action("Details", new { id = product.ProductId })">Details</a>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = product.ProductId })">Edit</a>
 
-                @if (!product.CanDelete)
-                {
-                    <button class="btn btn-danger" disabled>Delete</button>
-                }
-                else
-                {
-                    <a class="btn btn-danger" href="@Url.Action("Delete", new { id = product.ProductId })">Delete</a>
-                }
+                    @if (!product.CanDelete)
+                    {
+                        <button class="btn btn-danger" disabled>Delete</button>
+                    }
+                    else
+                    {
+                        <a class="btn btn-danger" href="@Url.Action("Delete", new { id = product.ProductId })">Delete</a>
+                    }
 
-                <!-- Inline Add to Cart Form -->
-                <form asp-controller="Products" asp-action="AddToCart" method="post" style="display: inline;">
-                    <input type="hidden" name="productId" value="@product.ProductId" />
-                    <button type="submit" class="btn btn-success">Add to Cart</button>
-                </form>
+                    <!-- Inline Add to Cart Form -->
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-inline">
+                        <input type="hidden" name="productId" value="@product.ProductId" />
+                        <button type="submit" class="btn btn-success">Add to Cart</button>
+                    </form>
+                </div>
             </td>
         </tr>
     }

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using OnlineShop.Data;
 using OnlineShop.Models;
 using OnlineShop.ViewModels;
+using System.Linq;
 
 namespace OnlineShop.Controllers
 {
@@ -28,17 +29,18 @@ namespace OnlineShop.Controllers
                     ListPrice = p.ListPrice,
                     ModifiedDate = p.ModifiedDate,
                     OrderCount = _context.SalesOrderDetails
-                        .Where(o => o.ProductId == p.ProductId)
-                        .Count()
+                        .Count(o => o.ProductId == p.ProductId) // Get the number of orders
                 })
                 .ToList();
 
             return View(products);
         }
+
         public IActionResult Details(int id)
         {
             var product = _context.Products
-                .Include(p => p.ProductCategory) // Include related category data
+                .Include(p => p.ProductCategory)
+                .Include(p => p.SalesOrderDetails) // Load related SalesOrderDetails
                 .FirstOrDefault(p => p.ProductId == id);
 
             if (product == null)
@@ -51,15 +53,8 @@ namespace OnlineShop.Controllers
 
         public IActionResult Create()
         {
-            var categories = _context.ProductCategories.ToList();
-            ViewBag.Categories = categories;
-
-            var product = new Product
-            {
-                SellStartDate = DateTime.Now
-            };
-            
-            return View(product);
+            ViewBag.Categories = _context.ProductCategories.ToList();
+            return View(new Product { SellStartDate = DateTime.Now });
         }
 
         [HttpPost]
@@ -78,30 +73,25 @@ namespace OnlineShop.Controllers
 
         public IActionResult Edit(int id)
         {
-            var categories = _context.ProductCategories.ToList();
-            ViewBag.Categories = categories;
-            var models = _context.ProductModels.ToList();
-            ViewBag.Models = models;
-
             var product = _context.Products.Find(id);
             if (product == null)
             {
                 return NotFound();
             }
 
+            ViewBag.Categories = _context.ProductCategories.ToList();
             return View(product);
         }
 
         [HttpPost]
-        public IActionResult Edit([Bind("ProductId,Name,ProductNumber,Color,ListPrice,Size,Weight," +
-                                        "SellStartDate,SellEndDate,DiscontinuedDate,ProductCategoryId,ProductModelId")] Product product)
+        public IActionResult Edit([Bind("ProductId,Name,ProductNumber,Color,ListPrice,Size,Weight,SellStartDate,SellEndDate,DiscontinuedDate,ProductCategoryId")] Product product)
         {
             if (ModelState.IsValid)
             {
                 var existingProduct = _context.Products.Find(product.ProductId);
                 if (existingProduct != null)
                 {
-                    _context.Entry(existingProduct).State = EntityState.Detached; // Detach previous entity to avoid conflict
+                    _context.Entry(existingProduct).State = EntityState.Detached;
                     product.Rowguid = existingProduct.Rowguid;
                     product.ModifiedDate = DateTime.Now;
                     _context.Update(product);
@@ -111,22 +101,24 @@ namespace OnlineShop.Controllers
                 }
                 return NotFound();
             }
-
             return View(product);
         }
 
         public IActionResult Delete(int id)
         {
-            var orders = _context.SalesOrderDetails
-                .Where(o => o.ProductId == id)
-                .Count(); // Efficiently count orders for this product
+            var product = _context.Products
+                .Include(p => p.SalesOrderDetails) // Load sales orders
+                .FirstOrDefault(p => p.ProductId == id);
 
-            ViewBag.Orders = orders;
-
-            var product = _context.Products.Find(id);
             if (product == null)
             {
                 return NotFound();
+            }
+
+            if (product.SalesOrderDetails.Any()) // Check if the product has sales
+            {
+                ModelState.AddModelError("", "Cannot delete this product because it has existing sales orders.");
+                return View(product);
             }
 
             return View(product);
@@ -135,51 +127,29 @@ namespace OnlineShop.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            var product = _context.Products.Find(id);
-            if (product != null)
-            {
-                _context.Products.Remove(product);
-                _context.SaveChanges();
-            }
+            var product = _context.Products
+                .Include(p => p.SalesOrderDetails)
+                .FirstOrDefault(p => p.ProductId == id);
 
-            return RedirectToAction(nameof(Index));
-        }
-        [HttpPost]
-        public IActionResult AddToCart(int productId, int quantity = 1)
-        {
-            // Get the product from the database
-            var product = _context.Products.FirstOrDefault(p => p.ProductId == productId);
             if (product == null)
             {
                 return NotFound();
             }
 
-            // Retrieve or create the cart
-            var cart = HttpContext.Session.GetObjectFromJson<List<InCart>>("Cart") ?? new List<InCart>();
-
-            // Check if the product is already in the cart
-            var cartItem = cart.FirstOrDefault(ci => ci.ProductId == productId);
-            if (cartItem != null)
+            // 🚨 Check if the product has purchases in `InCarts`
+            bool hasPurchases = _context.InCarts.Any(c => c.ProductId == id);
+            if (hasPurchases)
             {
-                // Update the quantity
-                cartItem.Quantity += quantity;
-            }
-            else
-            {
-                // Add a new item to the cart
-                cart.Add(new InCart
-                {
-                    ProductId = product.ProductId,
-                    ProductName = product.Name,
-                    Price = product.ListPrice,
-                    Quantity = quantity
-                });
+                ModelState.AddModelError("", "❌ This product has confirmed purchases and cannot be deleted.");
+                return View("Delete", product); // Show error message on the delete page
             }
 
-            // Save the cart back to the session
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
+            // 🚀 If no purchases, allow deletion
+            _context.Products.Remove(product);
+            _context.SaveChanges();
 
-            return RedirectToAction("Cart", "Cart");
+            return RedirectToAction(nameof(Index));
         }
+
     }
 }
