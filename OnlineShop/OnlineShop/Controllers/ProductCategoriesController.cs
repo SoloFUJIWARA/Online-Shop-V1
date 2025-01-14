@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using OnlineShop.Data;
 using OnlineShop.Models;
 using OnlineShop.ViewModels;
+using System;
+using System.Linq;
 
 namespace OnlineShop.Controllers
 {
@@ -110,26 +112,45 @@ namespace OnlineShop.Controllers
 
         public IActionResult Delete(int id)
         {
-            var category = _context.ProductCategories.Find(id);
+            var category = _context.ProductCategories
+                .Include(c => c.InverseParentProductCategory) // Load child categories
+                .FirstOrDefault(c => c.ProductCategoryId == id);
+
             if (category == null)
             {
                 return NotFound();
             }
+
+            if (category.InverseParentProductCategory.Any()) // Prevent deletion if there are subcategories
+            {
+                ModelState.AddModelError("", "Cannot delete this category because it has subcategories. Please delete or reassign them first.");
+                return View(category);
+            }
+
             return View(category);
         }
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
-            var category = _context.ProductCategories.Find(id);
+            var category = _context.ProductCategories
+                .Include(c => c.InverseParentProductCategory) // Load child categories
+                .FirstOrDefault(c => c.ProductCategoryId == id);
+
             if (category == null)
             {
                 return NotFound();
             }
+
+            // Remove references of child categories before deleting parent
+            foreach (var subCategory in category.InverseParentProductCategory)
+            {
+                subCategory.ParentProductCategoryId = null; // Detach subcategories
+            }
+
             _context.ProductCategories.Remove(category);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
     }
 }
-    
