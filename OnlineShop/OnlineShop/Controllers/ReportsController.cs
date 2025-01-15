@@ -15,7 +15,6 @@ public class ReportsController : Controller
         return View();
     }
 
-    // Report 1: Sales by Year and Month
     public ActionResult SalesByYearAndMonth()
     {
         var report = db.SalesOrderDetails
@@ -36,70 +35,68 @@ public class ReportsController : Controller
     {
         var report = db.SalesOrderDetails
             .Join(db.Products, sod => sod.ProductId, p => p.ProductId, (sod, p) => new { sod, p })
-            .GroupBy(x => new { x.p.ProductId, x.p.Name }) // Include ProductID in the group by
+            .GroupBy(x => new { x.p.ProductId, x.p.Name })
             .Select(g => new
             {
-                ProductID = g.Key.ProductId,   // Accessing ProductID
-                ProductName = g.Key.Name, // Accessing ProductName
-                TotalSales = g.Sum(x => x.sod.LineTotal) // Sum of LineTotal
+                ProductID = g.Key.ProductId,  
+                ProductName = g.Key.Name, 
+                TotalSales = g.Sum(x => x.sod.LineTotal) 
             })
             .ToList();
 
         return View(report);
     }
 
-    // Report 3: Sales by Product Categories
     public ActionResult SalesByCategory()
     {
         var report = db.SalesOrderDetails
             .Join(db.Products, sod => sod.ProductId, p => p.ProductId, (sod, p) => new { sod, p })
             .Join(db.ProductCategories, pp => pp.p.ProductCategoryId, pc => pc.ProductCategoryId, (pp, pc) => new { pp.sod, pp.p, pc })
-            .GroupBy(x => new { x.pc.ProductCategoryId, x.pc.Name })  // Group by CategoryID and CategoryName
+            .GroupBy(x => new { x.pc.ProductCategoryId, x.pc.Name })  
             .Select(g => new
             {
                 CategoryID = g.Key.ProductCategoryId,
-                CategoryName = g.Key.Name, // Accessing CategoryName
-                TotalSales = g.Sum(x => x.sod.LineTotal) // Summing sales
+                CategoryName = g.Key.Name, 
+                TotalSales = g.Sum(x => x.sod.LineTotal) 
             })
             .ToList();
 
         return View(report);
     }
 
-    // Report 4: Sales by Customers and Year
     public ActionResult SalesByCustomerAndYear()
     {
         var report = db.SalesOrderDetails
-            .Include(a => a.Product) // Include related Product data
+            .Include(a => a.Product) 
             .Join(
-                db.SalesOrderHeaders, // Join with the SalesOrderHeaders table
-                salesDetail => salesDetail.SalesOrderId, // Match on SalesOrderID
-                salesHeader => salesHeader.SalesOrderId, // Match on SalesOrderID in SalesOrderHeaders
+                db.SalesOrderHeaders, 
+                salesDetail => salesDetail.SalesOrderId, 
+                salesHeader => salesHeader.SalesOrderId,
                 (salesDetail, salesHeader) => new
                 {
                     salesDetail,
-                    salesHeader.CustomerId // Include CustomerID
+                    salesHeader.CustomerId
                 }
             )
             .Join(
-                db.Customers, // Join with the Customers table
-                salesWithHeader => salesWithHeader.CustomerId, // Match on CustomerID
-                customer => customer.CustomerId, // Match on CustomerId in Customers
+                db.Customers,
+                salesWithHeader => salesWithHeader.CustomerId, 
+                customer => customer.CustomerId,
                 (salesWithHeader, customer) => new
                 {
                     salesWithHeader.salesDetail,
-                    CustomerName = customer.CompanyName, // Include CustomerName
+                    CustomerName = customer.CompanyName, 
                     CustomerID = customer.CustomerId,
                     salesWithHeader.salesDetail.ModifiedDate
                 }
             )
-            .GroupBy(s => new { s.CustomerID, Year = s.ModifiedDate.Year }) // Group by CustomerId and Year
+            .GroupBy(s => new { s.CustomerID, Year = s.ModifiedDate.Year }) 
             .Select(g => new
             {
                 CustomerID = g.Key.CustomerID,
-                CustomerName = g.First().CustomerName, // Fetch customer name
+                CustomerName = g.First().CustomerName,
                 Year = g.Key.Year,
-                TotalSales = g.Sum(x => x.salesDetail.UnitPrice * x.salesDetail.OrderQty) // Calculate total sales
+                TotalSales = g.Sum(x => x.salesDetail.UnitPrice * x.salesDetail.OrderQty) 
             })
             .ToList();
 
@@ -107,32 +104,30 @@ public class ReportsController : Controller
 
     }
     
-    // Report 5: Sales by City
     public ActionResult SalesByCity()
     {
         var report = db.SalesOrderDetails
             .Join(db.Addresses, 
-                sod => sod.ProductId, // Foreign key in SalesOrderDetails
-                addr => addr.AddressId, // Primary key in Addresses
-                (sod, addr) => new { sod, addr }) // Join result
-            .GroupBy(x => x.addr.City) // Group by City
+                sod => sod.ProductId, 
+                addr => addr.AddressId, 
+                (sod, addr) => new { sod, addr })
+            .GroupBy(x => x.addr.City) 
             .Select(g => new
             {
-                City = g.Key, // Group key (City)
-                TotalSales = g.Sum(x => x.sod.LineTotal) // Sum of LineTotal for each city
+                City = g.Key, 
+                TotalSales = g.Sum(x => x.sod.LineTotal) 
             })
             .ToList();
 
         return View(report);
     }
 
-    // Report 6: Top 10 Customers by Sales Amount
     public IActionResult Top10CustomersBySales()
     {
         var topCustomers = db.Customers
             .Select(customer => new
             {
-                CustomerName = customer.FirstName + " " + customer.LastName, // Combine first and last name
+                CustomerName = customer.FirstName + " " + customer.LastName, 
                 TotalSales = customer.SalesOrderHeaders
                     .SelectMany(order => order.SalesOrderDetails)
                     .Sum(detail => detail.LineTotal)
@@ -146,35 +141,33 @@ public class ReportsController : Controller
         return View(topCustomers);
     }
 
-    // Report 7: Top 10 Customers by Sales Amount for each year
     public ActionResult Top10CustomersBySalesForYear(int year = 2008)
     {
         var topCustomers = db.Customers
             .Select(customer => new
             {
-                CustomerName = customer.FirstName + " " + customer.LastName, // Combine first and last name
+                CustomerName = customer.FirstName + " " + customer.LastName, 
                 TotalSales = customer.SalesOrderHeaders
-                    .Where(order => order.OrderDate.Year == year)  // Filter by the specified year (default is 2008)
-                    .SelectMany(order => order.SalesOrderDetails)  // Flatten SalesOrderDetails for each order
-                    .Sum(detail => detail.LineTotal)  // Sum the total sales for each customer
+                    .Where(order => order.OrderDate.Year == year)  
+                    .SelectMany(order => order.SalesOrderDetails)  
+                    .Sum(detail => detail.LineTotal)  
             })
-            .Where(c => c.TotalSales > 0) // Ensure only customers with sales are included
-            .OrderByDescending(c => c.TotalSales) // Order by total sales in descending order
-            .Take(10) // Take the top 10 customers
+            .Where(c => c.TotalSales > 0) 
+            .OrderByDescending(c => c.TotalSales) 
+            .Take(10) 
             .ToList();
 
         var formattedTopCustomers = topCustomers.Select(c => new
         {
             CustomerName = c.CustomerName,
-            TotalSales = c.TotalSales.ToString("C") // Format as currency
+            TotalSales = c.TotalSales.ToString("C")
         }).ToList();
 
-        return View(formattedTopCustomers); // Pass the data to the View
+        return View(formattedTopCustomers); 
     }
 
 
 
-    // Report 8: Top 10 Products by Sales Amount
     public ActionResult Top10ProductsBySales()
     {
         var topProducts = db.SalesOrderDetails
@@ -183,19 +176,19 @@ public class ReportsController : Controller
             .Select(g => new
             {
                 ProductName = g.Key.Name,
-                TotalSales = g.Sum(x => x.sod.LineTotal) // Total sales per product
+                TotalSales = g.Sum(x => x.sod.LineTotal)
             })
-            .OrderByDescending(g => g.TotalSales)  // Order by total sales in descending order
-            .Take(10) // Get top 10 products
+            .OrderByDescending(g => g.TotalSales)  
+            .Take(10)
             .ToList();
 
         var formattedTopProducts = topProducts.Select(p => new
         {
             ProductName = p.ProductName,
-            TotalSales = p.TotalSales.ToString("C") // Format as currency
+            TotalSales = p.TotalSales.ToString("C") 
         }).ToList();
 
-        return View(formattedTopProducts); // Pass the data to the View
+        return View(formattedTopProducts); 
     }
 
 

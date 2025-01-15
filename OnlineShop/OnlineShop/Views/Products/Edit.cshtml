@@ -1,5 +1,4 @@
 @model OnlineShop.Models.Product
-
 @{
     var categories = ViewBag.Categories as List<ProductCategory>;
     var models = ViewBag.Models as List<ProductModel>;
@@ -65,7 +64,7 @@
                 <label for="ProductCategoryId">Category</label>
                 <select class="form-control" id="ProductCategoryId" name="ProductCategoryId">
                     <option value="">-- Select a Category --</option>
-                    @foreach (var category in categories)
+                    @foreach (var category in categories ?? new List<ProductCategory>())
                     {
                         <option value="@category.ProductCategoryId"
                                 selected="@(category.ProductCategoryId == Model.ProductCategoryId ? "selected" : null)">
@@ -78,7 +77,7 @@
                 <label for="ProductModelId">Model</label>
                 <select class="form-control" id="ProductModelId" name="ProductModelId">
                     <option value="">-- Select a Model --</option>
-                    @foreach (var mod in models)
+                    @foreach (var mod in models ?? new List<ProductModel>())
                     {
                         <option value="@mod.ProductModelId"
                                 selected="@(mod.ProductModelId == Model.ProductModelId ? "selected" : null)">

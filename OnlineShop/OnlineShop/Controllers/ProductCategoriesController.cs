@@ -20,13 +20,13 @@ namespace OnlineShop.Controllers
         public IActionResult Index()
         {
             var categories = _context.ProductCategories
-                .Include(c => c.Products)  // Include related Products data
+                .Include(c => c.Products)  
                 .Select(c => new ProductCategoryViewModel
                 {
                     Id = c.ProductCategoryId,
                     Name = c.Name,
                     ModifiedDate = c.ModifiedDate,
-                    ProductCount = c.Products.Count() // Get the count directly from the loaded products
+                    ProductCount = c.Products.Count() 
                 })
                 .ToList();
 
@@ -36,8 +36,8 @@ namespace OnlineShop.Controllers
         public IActionResult Details(int id)
         {
             var category = _context.ProductCategories
-                .Include(c => c.Products)  // Include related Products data
-                .ThenInclude(p => p.SalesOrderDetails) // Include related SalesOrderDetails data
+                .Include(c => c.Products)  
+                .ThenInclude(p => p.SalesOrderDetails) 
                 .FirstOrDefault(c => c.ProductCategoryId == id);
 
             if (category == null)
@@ -53,7 +53,7 @@ namespace OnlineShop.Controllers
                 Color = p.Color,
                 ListPrice = p.ListPrice,
                 ModifiedDate = p.ModifiedDate,
-                OrderCount = p.SalesOrderDetails.Count() // Get the count of related SalesOrderDetails
+                OrderCount = p.SalesOrderDetails.Count() 
             }).ToList();
 
             ViewBag.Products = products;
@@ -113,7 +113,7 @@ namespace OnlineShop.Controllers
         public IActionResult Delete(int id)
         {
             var category = _context.ProductCategories
-                .Include(c => c.InverseParentProductCategory) // Load child categories
+                .Include(c => c.InverseParentProductCategory) 
                 .FirstOrDefault(c => c.ProductCategoryId == id);
 
             if (category == null)
@@ -121,7 +121,7 @@ namespace OnlineShop.Controllers
                 return NotFound();
             }
 
-            if (category.InverseParentProductCategory.Any()) // Prevent deletion if there are subcategories
+            if (category.InverseParentProductCategory.Any()) 
             {
                 ModelState.AddModelError("", "Cannot delete this category because it has subcategories. Please delete or reassign them first.");
                 return View(category);
@@ -134,7 +134,7 @@ namespace OnlineShop.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             var category = _context.ProductCategories
-                .Include(c => c.InverseParentProductCategory) // Load child categories
+                .Include(c => c.InverseParentProductCategory) 
                 .FirstOrDefault(c => c.ProductCategoryId == id);
 
             if (category == null)
@@ -142,10 +142,9 @@ namespace OnlineShop.Controllers
                 return NotFound();
             }
 
-            // Remove references of child categories before deleting parent
             foreach (var subCategory in category.InverseParentProductCategory)
             {
-                subCategory.ParentProductCategoryId = null; // Detach subcategories
+                subCategory.ParentProductCategoryId = null; 
             }
 
             _context.ProductCategories.Remove(category);

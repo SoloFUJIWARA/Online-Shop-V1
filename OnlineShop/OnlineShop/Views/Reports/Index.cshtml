@@ -29,7 +29,7 @@
     document.getElementById('reportForm').addEventListener('submit', function(event) {
         var selectedReport = document.getElementById('reportType').value;
 
-        var formAction = '@Url.Action("Index", "Reports")';  // Default action
+        var formAction = '@Url.Action("Index", "Reports")'; 
 
         if (selectedReport === 'SalesByYearAndMonth') {
             formAction = '@Url.Action("SalesByYearAndMonth", "Reports")';
@@ -49,11 +49,9 @@
             formAction = '@Url.Action("Top10ProductsBySales", "Reports")';
         }
 
-        // Set the form action to the dynamically determined URL
         this.action = formAction;
 
-        // Submit the form
         this.submit();
-        event.preventDefault();  // Prevent the default form submission (handled by JavaScript)
+        event.preventDefault();  
     });
 </script>

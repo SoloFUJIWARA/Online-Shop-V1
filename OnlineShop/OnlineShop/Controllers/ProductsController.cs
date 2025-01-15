@@ -29,7 +29,7 @@ namespace OnlineShop.Controllers
                     ListPrice = p.ListPrice,
                     ModifiedDate = p.ModifiedDate,
                     OrderCount = _context.SalesOrderDetails
-                        .Count(o => o.ProductId == p.ProductId) // Get the number of orders
+                        .Count(o => o.ProductId == p.ProductId) 
                 })
                 .ToList();
 
@@ -40,7 +40,7 @@ namespace OnlineShop.Controllers
         {
             var product = _context.Products
                 .Include(p => p.ProductCategory)
-                .Include(p => p.SalesOrderDetails) // Load related SalesOrderDetails
+                .Include(p => p.SalesOrderDetails) 
                 .FirstOrDefault(p => p.ProductId == id);
 
             if (product == null)
@@ -74,14 +74,17 @@ namespace OnlineShop.Controllers
         public IActionResult Edit(int id)
         {
             var product = _context.Products.Find(id);
+    
             if (product == null)
             {
                 return NotFound();
             }
 
             ViewBag.Categories = _context.ProductCategories.ToList();
+            ViewBag.Models = _context.ProductModels.ToList();
+
             return View(product);
-        }
+        }   
 
         [HttpPost]
         public IActionResult Edit([Bind("ProductId,Name,ProductNumber,Color,ListPrice,Size,Weight,SellStartDate,SellEndDate,DiscontinuedDate,ProductCategoryId")] Product product)
@@ -107,7 +110,7 @@ namespace OnlineShop.Controllers
         public IActionResult Delete(int id)
         {
             var product = _context.Products
-                .Include(p => p.SalesOrderDetails) // Load sales orders
+                .Include(p => p.SalesOrderDetails) 
                 .FirstOrDefault(p => p.ProductId == id);
 
             if (product == null)
@@ -115,7 +118,7 @@ namespace OnlineShop.Controllers
                 return NotFound();
             }
 
-            if (product.SalesOrderDetails.Any()) // Check if the product has sales
+            if (product.SalesOrderDetails.Any()) 
             {
                 ModelState.AddModelError("", "Cannot delete this product because it has existing sales orders.");
                 return View(product);
@@ -136,15 +139,13 @@ namespace OnlineShop.Controllers
                 return NotFound();
             }
 
-            // 🚨 Check if the product has purchases in `InCarts`
             bool hasPurchases = _context.InCarts.Any(c => c.ProductId == id);
             if (hasPurchases)
             {
                 ModelState.AddModelError("", "❌ This product has confirmed purchases and cannot be deleted.");
-                return View("Delete", product); // Show error message on the delete page
+                return View("Delete", product); 
             }
 
-            // 🚀 If no purchases, allow deletion
             _context.Products.Remove(product);
             _context.SaveChanges();
 

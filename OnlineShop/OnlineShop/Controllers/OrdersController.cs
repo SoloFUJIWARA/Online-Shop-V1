@@ -1,25 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineShop.Data; // Ensure this is included for EF Core features
-using OnlineShop.Models; // Add this namespace for your actual DbContext
+using OnlineShop.Data; 
+using OnlineShop.Models; 
 
 namespace OnlineShop.Controllers
 {
     public class OrdersController : Controller
     {
      
-        // Inject the DbContext into the controller
         private readonly ApplicationDbContext _context;
 
         public OrdersController(ApplicationDbContext context)
         {
-            _context = context; // Assign it to the context variable
+            _context = context;
         }
 
-        // Action to display the orders
         public ActionResult Orders()
         {
-            // Query the database to get all orders from the InCart table
             var orders = _context.InCarts
                 .Select(x => new SalesOrderViewModel
                 {
@@ -27,14 +24,13 @@ namespace OnlineShop.Controllers
                     ProductName = x.ProductName,
                     Price = x.Price,
                     Quantity = x.Quantity,
-                    UserId = x.UserId, // If you still want to show the UserId for each product
-                    LineTotal = x.Quantity * x.Price,  // Calculate line total for the product
-                    TotalDue = x.Quantity * x.Price   // Calculate total due for this product
+                    UserId = x.UserId, 
+                    LineTotal = x.Quantity * x.Price,  
+                    TotalDue = x.Quantity * x.Price   
                 })
                 .ToList();
 
-            // Return the orders to the view
-            return View("Index", orders);  // Pass orders to the view
+            return View("Index", orders); 
         }
 
 
